@@ -1,0 +1,20 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  flake-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: DeterminateSystems/nix-installer-action@main
+
+      # Includes checks.codex-version-match: fails any PR (notably a
+      # Dependabot nixpkgs bump or a manual fugu-src bump) that would land
+      # a fugu config verified against a different Codex version than the
+      # one pinned in codex-pin.nix.
+      - run: nix flake check

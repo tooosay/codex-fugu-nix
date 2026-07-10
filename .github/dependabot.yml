@@ -1,0 +1,30 @@
+version: 2
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "github-actions"
+      - "safe-automerge-candidate"
+    groups:
+      actions:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 2
+
+  - package-ecosystem: "nix"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "nix"
+    # fugu-src is deliberately excluded: bumping it requires reconciling
+    # codex-pin.nix (scripts/update-codex-pin.sh), which Dependabot cannot
+    # do. update-fugu.yml owns fugu-src; Dependabot only tracks nixpkgs.
+    ignore:
+      - dependency-name: "fugu-src"
+    open-pull-requests-limit: 2

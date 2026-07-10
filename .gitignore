@@ -1,0 +1,10 @@
+result
+result-*
+
+secrets/
+secrets-*
+.sops.yaml
+*.env
+*.env.*
+*.age
+

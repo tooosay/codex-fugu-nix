@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "fugu-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1782965160,
+        "narHash": "sha256-OavVB9B5lgKbLEjaaVg1STqmecqYLe3VgZyCYaQZ6aY=",
+        "owner": "SakanaAI",
+        "repo": "fugu",
+        "rev": "aa7fabc3b5cde4919ab093bb260179cafb2f9560",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SakanaAI",
+        "repo": "fugu",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1783522502,
+        "narHash": "sha256-iffAls3iaNTyJC2faYcUXSI+Gp02cDjYl+MygxKl2GI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0bb7ec54c8483066ec9d7720e780a5caa71f8612",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fugu-src": "fugu-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
