@@ -1,4 +1,4 @@
-# codex-fugu-flake
+# codex-fugu-nix
 
 This is unoficial SakanaAI's fugu nix package.
 
