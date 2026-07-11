@@ -18,7 +18,7 @@ fugu-src = {
 ```
 ## Installation
 ```nix
-inputs.codex-fugu.url = "path:/etc/nixos/modules/codex-fugu-nix";
+inputs.codex-fugu.url = "github:tooosay/codex-fugu-nix";
 inputs.codex-fugu.inputs.nixpkgs.follows = "nixpkgs";
 ```
 ### Home Manager (NixOS Integration)
