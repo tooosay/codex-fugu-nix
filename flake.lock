@@ -3,11 +3,11 @@
     "fugu-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1782965160,
-        "narHash": "sha256-OavVB9B5lgKbLEjaaVg1STqmecqYLe3VgZyCYaQZ6aY=",
+        "lastModified": 1783758209,
+        "narHash": "sha256-jBxC7WebnNnm0DjWigfllOxNeacbb+k5kjEhV2vNI3o=",
         "owner": "SakanaAI",
         "repo": "fugu",
-        "rev": "aa7fabc3b5cde4919ab093bb260179cafb2f9560",
+        "rev": "4b77e4cb8c153d01035d63c3e652082d854df4d4",
         "type": "github"
       },
       "original": {
