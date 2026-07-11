@@ -1,3 +1,6 @@
+[![secret-scan](https://github.com/tooosay/codex-fugu-nix/actions/workflows/secret-scan.yml/badge.svg)](https://github.com/tooosay/codex-fugu-nix/actions/workflows/secret-scan.yml)
+[![update fugu-src and codex pin](https://github.com/tooosay/codex-fugu-nix/actions/workflows/update-fugu.yml/badge.svg)](https://github.com/tooosay/codex-fugu-nix/actions/workflows/update-fugu.yml)
+
 # codex-fugu-nix
 
 This is unoficial SakanaAI's fugu nix package.
