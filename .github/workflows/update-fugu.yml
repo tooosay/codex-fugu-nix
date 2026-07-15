@@ -32,6 +32,7 @@ jobs:
         run: nix build .#codex-fugu
 
       - name: open PR if anything changed
+        id: cpr
         uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "flake: bump fugu-src and codex pin"
@@ -47,3 +48,14 @@ jobs:
             dependencies
             fugu-src
             codex
+
+      - name: summarize no update
+        if: steps.cpr.outputs.pull-request-operation == 'none'
+        run: |
+          {
+            echo "### ✅ fugu-src / Codex pin update"
+            echo
+            echo "更新対象はありませんでした。"
+            echo
+            echo "新しく merge するものはありません。"
+          } >> "$GITHUB_STEP_SUMMARY"
