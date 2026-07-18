@@ -2,6 +2,9 @@
 [![update fugu-src and codex pin](https://github.com/tooosay/codex-fugu-nix/actions/workflows/update-fugu.yml/badge.svg)](https://github.com/tooosay/codex-fugu-nix/actions/workflows/update-fugu.yml)
 
 # codex-fugu-nix
+![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftooosay%2Fcodex-fugu-nix%2Fmain%2FOSSMETADATA)
+
+**This project has been archived because I’ve moved to a different setup for my daily workflow.**
 
 This is unoficial SakanaAI's fugu nix package.
 
